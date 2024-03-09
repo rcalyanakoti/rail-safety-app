@@ -12,6 +12,30 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/resources/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/resources/page.css",
+      "static/chunks/app/resources/page.js"
+    ],
+    "/connect/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/connect/page.css",
+      "static/chunks/app/connect/page.js"
+    ],
+    "/post/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/post/page.css",
+      "static/chunks/app/post/page.js"
+    ],
+    "/stops/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/stops/page.css",
+      "static/chunks/app/stops/page.js"
+    ],
     "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

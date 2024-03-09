@@ -61,13 +61,14 @@
 
 .card h2 {
   font-weight: 600;
+  font-size: 2rem;
   margin-bottom: 0.7rem;
 }
 
 .card p {
   margin: 0;
   opacity: 0.6;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   max-width: 30ch;
   text-wrap: balance;
@@ -78,22 +79,35 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 0.5rem 0;
+}
+
+.center h1 {
+  font-size: 6rem;
+}
+
+.center p {
+  font-size: 0.5rem;
 }
 
 .center::before {
+  content: "";
   background: var(--secondary-glow);
   border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
+  width: 500px;
+  height: 370px;
+  position: absolute;
+  filter: blur(45px);
+  z-index: -1;
 }
 
 .center::after {
+  content: "";
   background: var(--primary-glow);
   width: 240px;
   height: 180px;
-  z-index: -1;
+  position: absolute;
+  z-index: -2;
 }
 
 .center::before,
@@ -107,6 +121,8 @@
 
 .logo {
   position: relative;
+  top: 0px;
+  left: 40px;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -135,7 +151,7 @@
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
-    max-width: 320px;
+    max-width: 500px;
     text-align: center;
   }
 
@@ -150,6 +166,7 @@
   .center {
     padding: 8rem 0 6rem;
   }
+  
 
   .center::before {
     transform: none;
