@@ -1,9 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import {Nav} from "@/components/nav";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Nav>
+      </Nav>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
@@ -29,14 +32,15 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <Image
+        <h1> Welcome to Railway Reliance </h1>
+        {/* <Image
           className={styles.logo}
-          src="assets/logo.png"
+          src="/next.svg"
           alt="Next.js Logo"
           width={180}
           height={37}
           priority
-        />
+        /> */}
       </div>
 
       <div className={styles.grid}>
